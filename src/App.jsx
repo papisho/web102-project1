@@ -1,10 +1,10 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="app">
-      <h1>Trailhead</h1>
-      <p>Local hiking trails board — coming together step by step.</p>
+      <Header />
     </div>
   )
 }
