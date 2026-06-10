@@ -56,12 +56,9 @@ src/
 └── index.css           # Base styles
 ```
 
-## 📸 Screenshot
+## 📸 Walkthrough
 
-<!-- Add a screenshot or GIF of your running app here, e.g.: -->
-<!-- ![Trailhead screenshot](./screenshot.png) -->
-
-_Add a screenshot of the running app here._
+![Trailhead walkthrough](./src/assets/Animation.gif)
 
 ## 📝 License
 
