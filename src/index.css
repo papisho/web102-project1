@@ -7,4 +7,6 @@ body {
   margin: 0;
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  background-color: #f1f5f0;
+  color: #2d3a2e;
 }

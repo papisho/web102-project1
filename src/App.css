@@ -1,1 +1,134 @@
-/* App-specific styles will go here as we build the board. */
+/* ===== Layout ===== */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  padding: 56px 24px;
+  margin: 0 -24px 40px;
+  background: linear-gradient(135deg, #2f6b3f 0%, #3f8a55 60%, #6bb583 100%);
+  color: #ffffff;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header-subtitle {
+  margin: 12px 0 0;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* ===== Card grid ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* ===== Card ===== */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.card-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px 22px;
+  flex-grow: 1;
+}
+
+.card-name {
+  margin: 10px 0 4px;
+  font-size: 1.3rem;
+  color: #1f3a26;
+}
+
+.card-location {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: #6b7a6e;
+}
+
+.card-description {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  color: #45554a;
+  flex-grow: 1;
+}
+
+/* ===== Difficulty badge ===== */
+.card-difficulty {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.difficulty-easy {
+  background: #3f8a55;
+}
+
+.difficulty-moderate {
+  background: #d98a2b;
+}
+
+.difficulty-hard {
+  background: #c0492b;
+}
+
+/* ===== Stats ===== */
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #3a4a3e;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* ===== Link button ===== */
+.card-link {
+  align-self: flex-start;
+  text-decoration: none;
+  background: #2f6b3f;
+  color: #ffffff;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.card-link:hover {
+  background: #244f30;
+}
