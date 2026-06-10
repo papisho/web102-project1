@@ -132,3 +132,43 @@
 .card-link:hover {
   background: #244f30;
 }
+
+/* ===== Responsive: tablets ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 44px 20px;
+  }
+
+  .header-title {
+    font-size: 2.4rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .card-grid {
+    gap: 22px;
+  }
+}
+
+/* ===== Responsive: phones ===== */
+@media (max-width: 480px) {
+  .app {
+    padding: 0 16px 36px;
+  }
+
+  .header {
+    margin: 0 -16px 32px;
+    padding: 36px 16px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  /* Single column so cards never overflow on narrow screens */
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
